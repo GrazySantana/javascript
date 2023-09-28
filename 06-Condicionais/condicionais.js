@@ -13,7 +13,13 @@ let idade = 41;
 let mensagem;
 
 
-// 1ª Digitação (Aqui)
+if (idade > 18) {
+    mensagem = ("Você é maior de idade");
+
+}  else {
+    mensagem = ("Você é menor de idade");
+    }
+
 
 
 console.log(mensagem);
@@ -25,8 +31,18 @@ document.write("________________________________________________________________
 document.write('<h2 style="color: blue;">Condicional aninhada</h2><br>');
 
 
-
-// 2ª Digitação (Aqui)
+if (idade >=60) {
+    mensagem ="É idoso";
+}   else if (idade >=18) {
+    mensagem ="É adulto, mas não é idoso.";
+}   else {
+        // && (operador E)
+        if (idade >=12 && idade <18) {
+            mensagem = "É adolescente.";
+    } else {
+    mensagem ="É baby."
+    }
+}
 
 
 document.write(`${nome}, ${mensagem} <br>`); // Mostra a tela (Navegador)
@@ -41,8 +57,17 @@ document.write('<h2 style="color: blue;">Exercício notas, média e Aprovado e R
 var n1 = 5.7;
 var n2 = 9;
 
+// Modo tradicional
+media = (n1 + n2) /2;
 
-// 3ª Digitação (Aqui)
+if (media >=7) {
+    situacao = 'Aprovado!';
+} else {
+    situacao = 'Reprovado!';
+}
+
+// //opeardor ternáreio
+// situacao = media >= 7 ? 'Aprovado!': 'Reprovado!';
 
 
 document.write(`Média: ${media}<br> `)
@@ -61,12 +86,23 @@ Opçôes do Chat Bot:
 3 -> dúvidas
 x -> opçao desconhecida, direcionar para um humano */
 
-let opcao = 4;
+let opcao = 3;
 let textoOpcao;
 
-
-
-// 4ª Digitação (Aqui)
+switch (opcao) {
+    case 1:
+        textoOpcao = 'Legal, o que deseja saber?'
+        break;
+    case 2:
+        textoOpcao = 'que pena, o que aconteceu?'
+        break;
+    case 3:
+        textoOpcao = 'certo, qual a dúvida?'
+        break;
+    case 4:
+        textoOpcao = 'hum, não entendi... vou transferir.'
+        break; 
+}
 
 
 document.write(`Você escolheu a opção ${opcao} <br>`);
@@ -80,9 +116,12 @@ document.write('<h2 style="color: blue;">Operadores de comparação</h2><br>');
 // Operadores de comparação
 
 
-// 5ª Digitação (Aqui)
+let a = 10;
+let b = '10';
+
+
 
 
 // == se é igual/ === estritamente igual (até tipo de dados)
-document.write(a == b); // True ou false
+document.write(a === b); // True ou false
 
