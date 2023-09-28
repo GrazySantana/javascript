@@ -5,6 +5,15 @@ let equipe =["Christian Horner", "Hannah Schmitz","Gianpiero Lambiase","Red bull
 document.write('<h2 style="color: blue;">Criando um array (ou vetor)</h2><br>');
 
 
+document.write("Os melhores profissionais de F1 são:" +equipe+ "<br><br>")
+
+document.write("O melhor chefe de F1 é:<strong>" +equipe[0]+ "</strong><br>")
+document.write("A melhor estrategista de F1 é:<strong>" +equipe[1]+ "</strong><br>")
+document.write("O melhor engenheiro de F1 é:<strong>" +equipe[2]+ "</strong><br><br>")
+
+document.write("A equipe n1° de F1 é: <strong>" +equipe[3]+ "</strong> sem sombra de dúvidas!<br>")
+
+
 // 1ª Digitação (Aqui)
 
 
@@ -27,4 +36,6 @@ let equipesF1 = [
 
 // Exibir Red Bull
 
-// 2ª Digitação (Aqui)
+document.write(`melhor equipe de F1 da atualizada: <strong>${equipesF1[0][2]}</strong>`)
+
+document.write(`melhor equipe de F1 da atualizada: <strong>${equipesF1[1][3]}</strong>`)
